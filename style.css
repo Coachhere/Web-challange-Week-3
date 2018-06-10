@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('fonts/avenir.otf');
+}
+
+/*Full reset on spaces*/
+* *,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+
+/*HTML styling*/
+html {
+    font-size: 10pt;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'Avenir', 'Open Sans', sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Body styling*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #F3F3F3;
+}
+
+/*Hyperlink styling*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Home section*/
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url("images/header.jpg") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    color: #4A4A4A;
+    padding: 50px;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#mobile-menu:hover {
+    color: #222222;
+}
+
+.toggle {
+    top: 0;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 140px;
+    height: 60px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+.menu {
+    list-style: none;
+    display: inline-flex;
+    margin: 25px 0;
+    font-size: 1.3em;
+}
+
+.menu li {
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.menu li a {
+    opacity: 0.6;
+}
+
+.menu li a:hover {
+    opacity: 1;
+}
+
+.search img {
+    height: 20px;
+    width: 20px;
+    margin: 25px 0 25px 25px;
+    cursor: pointer;
+}
+
+.main-text {
+    text-align: center;
+    font-size: 5em;
+    margin: 1em auto 0;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+/*About us section*/
+.about-us {
+    background: #222222;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.about {
+    padding: 10px;
+}
+
+.about-title {
+    color: #4A4A4A;
+    font-size: 3em;
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+/*left section*/
+.left-section {
+    width: 100%;
+    padding: 0 60px;
+}
+
+.left-title {
+    color: #F3F3F3;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.lorem {
+    color: #4A4A4A;
+    font-size: 1.6rem;
+}
+
+/*center section*/
+.middle-section {
+    width: 100%;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.middle-title {
+    color: #F3F3F3;
+    font-size: 2.6rem;
+}
+
+.specializations {
+    color: #4A4A4A;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.delivery {
+    height: 45px;
+    width: 70px;
+}
+
+.montage, .support {
+    height: 50px;
+    width: 55px;
+}
+
+/*right section*/
+.right-section {
+    width: 100%;
+    text-align: center;
+}
+
+.right-section img {
+    height: 400px;
+    width: 400px;
+}
+
+/*categories*/
+.categories {
+    display: flex;
+    flex-direction: column;
+    background: #F3F3F3;
+}
+
+.categories-title {
+    color: #4A4A4A;
+    font-size: 2.6rem;
+    padding: 10px;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.kitchen, .bathroom, .living-room, .bed-room {
+    margin: 0 auto;
+}
+
+.picture-container {
+    position: relative;
+    overflow: hidden;
+    background-position: right bottom;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.picture-container:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    background: transparent;
+}
+
+.category-container img {
+    /*background: top center no-repeat;*/
+    width: 50%;
+    height: 500px;
+}
+
+.category-container img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    color: #F3F3F3;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/*footer*/
+.footer-title {
+    background: #F3F3F3;
+    text-align: center;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    padding: 0 0 0 5px;
+}
+
+/* Landscape phones and down */
+@media screen and (max-width: 480px) {
+    .category-container img {
+        background: top center no-repeat;
+        width: 100%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media screen and (max-width: 767px) {
+
+    /*home*/
+    .head {
+        background: #F3F3F3;
+        flex-direction: column;
+        color: #4A4A4A;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        top: -315px;
+        width: 100%;
+    }
+
+    .toggle {
+        top: 0;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        display: flex;
+        text-align: left;
+        z-index: 999;
+        padding: 20px;
+        font-size: 2em;
+        cursor: pointer;
+        color: #4A4A4A;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        padding: 5px 0;
+    }
+
+    .search img {
+        margin: 0 0 0 50px;
+    }
+
+    .main-text {
+        font-size: 3em;
+        margin: 0 auto;
+    }
+
+    /*categories*/
+    .category-container {
+        flex-wrap: wrap;
+    }
+
+    .category-container img {
+        width: 100%;
+    }
+
+}
+
+/*about*/
+/* Portrait tablet to landscape and desktop */
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+    /*categories*/
+    .kitchen, .living-room, .bed-room, .bathroom {
+    }
+
+    .category-container img {
+        width: 50%;
+    }
+}
+
+/* Large desktop */
+@media screen and (min-width: 1200px) {
+
+    /*about*/
+    .about {
+        padding: 15px 0 0 150px;
+    }
+
+    .sections {
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .right-section {
+        width: 33.33%;
+        padding-top: 3em;
+        text-align: right;
+    }
+
+    .middle-section {
+        width: 33.33%;
+        text-align: left;
+        padding-left: 3.5rem;
+    }
+
+    .left-section {
+        width: 33.33%;
+        padding: 10px 30px;
+    }
+
+    .left-title {
+        text-align: left;
+    }
+
+    .main-text {
+        font-size: 7em;
+    }
+
+    /*categories*/
+    .categories-title {
+        padding: 0 0 0 4em;
+    }
+
+    .category-container {
+        flex-direction: row;
+    }
+
+    .kitchen, .living-room, .bed-room, .bathroom {
+        width: 25%;
+    }
+
+    .category-container img {
+        height: 550px;
+        width: 100%;
+    }
+}
+
+

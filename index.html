@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>IKAE</title>
+    <meta name="description" content="IKEA Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icons/favicon-32x32.png" type="image/x-icon">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+<div class="home">
+    <header>
+        <div id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="head toggle">
+            <div class="logo">
+                <img src="icons/logo.png"/>
+            </div>
+            <div class="navigation">
+                <ul class="menu">
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">collection</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="search">
+                    <img src="icons/search.png"/></div>
+            </div>
+        </div>
+    </header>
+    <h1 class="main-text">fresh furniture</h1>
+</div>
+<div class="about-us">
+    <div class="about">
+        <h1 class="about-title">about us</h1>
+    </div>
+    <div class="sections">
+        <div class="left-section">
+            <h1 class="left-title">we provide good furniture</h1>
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia</p>
+        </div>
+        <div class="middle-section">
+            <h1 class="middle-title">our specializaton</h1>
+            <img src="icons/delivery.png" class="delivery"/>
+            <h3 class="specializations">delivery</h3>
+            <img src="icons/support.png" class="support"/>
+            <h3 class="specializations">support</h3>
+            <img src="icons/montage.png" class="montage"/>
+            <h3 class="specializations">montage</h3>
+        </div>
+        <div class="right-section">
+            <img src="images/image.jpg" alt="image"/></div>
+    </div>
+</div>
+<div class="categories">
+    <div class="category">
+        <h1 class="categories-title">categories</h1>
+    </div>
+    <div class="category-container">
+        <div class="bathroom">
+            <div class="picture-container">
+                <img src="images/bathroom.jpg" alt="image"/>
+                <h1 class="image-title">bathroom</h1>
+            </div>
+        </div>
+        <div class="kitchen">
+            <div class="picture-container">
+                <img src="images/kitchen.jpg" alt="image"/>
+                <h1 class="image-title">kitchen</h1>
+            </div>
+        </div>
+        <div class="bed-room">
+            <div class="picture-container">
+                <img src="images/bedroom.jpg" alt="image"/>
+                <h1 class="image-title">bed room</h1>
+            </div>
+        </div>
+        <div class="living-room">
+            <div class="picture-container">
+                <img src="images/livingroom.jpg" alt="image"/>
+                <h1 class="image-title">living room</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p class="footer-title">&copy;IKAE 2018 | All rights reserved.</p>
+</div>
+<script type="text/javascript">
+    /*Onclick adds css class toggle*/
+    function toggleMenuClickHandler(evt) {
+        let menu = document.querySelector('.head');
+        menu.classList.toggle("toggle");
+    }
+
+    let menuToggle = document.querySelector('#mobile-menu');
+    menuToggle.addEventListener("click", toggleMenuClickHandler);
+</script>
+</body>
+</html>
